@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="Login">
+    <div class="form">
+        <form id="loginForm">
+            <div class="title">Welcome</div>
+            <div class="subtitle">Let's Login in to the Page..</div>
+            
+            <div class="username">
+                <input id="username" class="input" type="text" placeholder=" " />
+                <div class="cut"></div>
+                <label for="username" class="placeholder">Username</label>
+            </div>
+
+            <div class="email">
+                <input id="email" class="input" type="text" placeholder=" " />
+                <div class="cut cut-short"></div>
+                <label for="email" class="placeholder">Email</label>
+            </div>
+
+            <div class="pass">
+                <input id="pass" class="input" type="password" placeholder=" " />
+                <div class="cut"></div>
+                <label for="pass" class="placeholder">Password</label>
+            </div>
+            
+            <button id="submitBtn" class="submit" role="button">Login</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            window.location.href = "Loading.html";
+        });
+    </script>
+</body>
+</html>
